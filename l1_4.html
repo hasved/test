@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<h3 align = "center">Добро пожаловать</h3><br><br><br>
+		<form>
+		<table align = "center" border = 1 width = "400" style="border-collapse:collapse;">
+			<tr height = "50">
+				<td colspan = "2">Введите номер лицевого счёта:</td>
+				<td><input type = "text" required pattern = "[0-9]{20}"></td>
+			</tr>
+			<tr height = "50">
+				<td colspan = "2">Выберете категорию вашего вклада:</td>
+				<td align = "center"><select name = "select" size = "1">
+					<option selected value = "s1">Накопительный</option>
+					<option value = "s2">Сберегательный</option>
+					<option value = "s3">Расчётный</option>
+				</td>
+			</tr>
+			<tr height = "50">
+				<td rowspan = "2">Введите ваши паспортные данные</td>
+				<td>Серия:</td>
+				<td><input type = "text" required pattern = "[0-9]{4}"></td>
+			</tr>
+			<tr height = "50">
+				<td>Номер:</td>
+				<td><input type = "text" required pattern = "[0-9]{6}"></td>
+			</tr>
+			<tr height = "50">
+				<td colspan = "2">Введите текущую сумму вклада:</td>
+				<td><input type = "text"></td>
+			</tr>
+			<tr height = "50">
+				<td colspan = "2">Введите дату последней операции:</td>
+				<td><input type = "text" required pattern = "[0-9]{2}\.[0-9]{2}\.[0-9]{4}"></td>
+			</tr>
+		</table>
+		<p align = "center"><input type = "reset">    <input type = "submit"></p>
+		</form>
+	</body>
+</html>
